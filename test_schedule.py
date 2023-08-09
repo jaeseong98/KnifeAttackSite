@@ -7,10 +7,10 @@ from typing import List
 import uvicorn
 from schema import DataFrameRow
 from data_process import process_data
-
+import os
 
 # step1.실행 주기 설정
-schedule.every().day.at("23:00").do(process_data)
+schedule.every().day.at("08:40").do(process_data)
 
 # step2.스캐쥴 시작
 while True:
